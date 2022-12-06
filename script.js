@@ -1,4 +1,6 @@
-fetch('http://localhost:3000/founders', {
+let arrayOfData = [];
+
+fetch('http://localhost:3000/companyData', {
     method: 'GET',
     headers: {
     },
