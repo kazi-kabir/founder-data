@@ -1,0 +1,74 @@
+{
+    "founders": [
+        {
+            "company": "ByteDance",
+            "valuation": 140,
+            "industry": "internet",
+            "country": " China",
+            "founders": "Zhang Yiming Liang Rubo"
+        },
+        {
+            "company": "SpaceX",
+            "valuation": 127,
+            "industry": "aerospace",
+            "country": " US",
+            "founders": "Elon Musk"
+        },
+        {
+            "company": "Shein",
+            "valuation": 100,
+            "industry": "e commerce",
+            "country": " China",
+            "founders": "Chris Xu"
+        },
+        {
+            "company": "Stripe",
+            "valuation": 95,
+            "industry": "financial services",
+            "country": " US/ Ireland",
+            "founders": "Patrick John Collison"
+        },
+        {
+            "company": "Canva",
+            "valuation": 40,
+            "industry": "graphic design",
+            "country": " Australia",
+            "founders": "Melanie Perkins Clifford Obrecht Cameron Adams"
+        },
+        {
+            "company": "Checkout.com",
+            "valuation": 40,
+            "industry": "financial technology",
+            "country": " UK",
+            "founders": "Guillaume Pousaz"
+        },
+        {
+            "company": "Instacart",
+            "valuation": 24,
+            "industry": "retail",
+            "country": " US",
+            "founders": "Apoorva Mehta Max Mullen Bron Leonardo"
+        },
+        {
+            "company": "Databricks",
+            "valuation": 38,
+            "industry": "software",
+            "country": " US",
+            "founders": "Ali Ghodsi"
+        },
+        {
+            "company": "Revolut",
+            "valuation": 33,
+            "industry": "financial technology",
+            "country": " UK",
+            "founders": "Nikolay Storonsky Vlad Yatsenko"
+        },
+        {
+            "company": "FTX",
+            "valuation": 32,
+            "industry": "crypt ocurrency",
+            "country": " Bahamas",
+            "founders": "Sam Bankman Fried Gary Wang"
+        }
+    ]
+}
