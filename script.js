@@ -7,3 +7,6 @@ fetch('http://localhost:3000/companyData', {
 })
 .then(response => response.text())
 .then(text => console.log(text))
+
+// get JSON data as an array
+
