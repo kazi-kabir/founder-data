@@ -20,5 +20,6 @@ fetch(
 // store JSON data somewhere 
 // get JSON data as an array
 // push that into elements
+// make it appear as a div (for one)
 
 
