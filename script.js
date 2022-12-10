@@ -1,12 +1,5 @@
 let arrayOfData = [];
 
-// fetch('http://localhost:3000/companyData', {
-//     method: 'GET',
-//     headers: {
-//     },
-// })
-// .then(response => console.log(response.body))
-
 fetch(
     'http://localhost:3000/companyData', {
     method: 'GET',
@@ -14,7 +7,7 @@ fetch(
     },
 }).then( res => res.json()).then(data => {
     arrayOfData = data
-    
+    console.log(arrayOfData[0])
 })
 
 // store JSON data somewhere 
