@@ -14,5 +14,6 @@ fetch(
 // get JSON data as an array
 // push that into elements
 // make it appear as a div (for one)
-
+// flag library
+// https://github.com/luciopaiva/country-flags
 
