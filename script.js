@@ -5,8 +5,16 @@ let mockObj = {
         company: "ByteDance",
         valuation: 140,
         industry: "internet",
-        country: "China",
+        country: " China",
         founders: "Zhang Yiming Liang Rubo"
+}
+
+function retrieveObj(obj) {
+
+}
+
+function createAndAppendDivToBody(obj) {
+
 }
 
 function getData(url) {
