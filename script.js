@@ -9,12 +9,16 @@ let mockObj = {
         founders: "Zhang Yiming Liang Rubo"
 }
 
-function retrieveObj(obj) {
-
-}
 
 function createAndAppendDivToBody(obj) {
-
+    console.log(obj);
+    var div = document.createElement('div');
+    div.innerHTML = "my <b>new</b> skill - <large>DOM maniuplation!</large>";
+    // set style
+    div.style.color = 'red';
+    // better to use CSS though - just set class
+    div.setAttribute('class', 'myclass'); // and make sure myclass has some styles in css
+    document.body.appendChild(div);
 }
 
 function getData(url) {
@@ -25,9 +29,11 @@ function getData(url) {
         },
     })
     .then(res => res.json())
-    .then(data => {
+    .then(
+        data => {
         arrayOfData = data
         console.log(arrayOfData[0])
+        createAndAppendDivToBody()
     })
 }
 
