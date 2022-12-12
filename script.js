@@ -4,14 +4,19 @@ let url = 'http://localhost:3000/companyData';
 let mockObj = {
         company: "ByteDance",
         valuation: 140,
-        industry: "fembu",
+        industry: "internet",
         country: " China",
         founders: "Zhang Yiming Liang Rubo"
 }
 
 function createAndAppendDivToBody(obj) {
     var div = document.createElement('div');
-    div.innerHTML = "my <b>" + obj.company + "</b>";
+    div.innerHTML = 
+    "<div>" + obj.company + "</div>" +
+    "<div> "+ obj.valuation + "<div>" + 
+    "<div> "+ obj.industry + "<div>" + 
+    "<div> "+ obj.country + "<div>" + 
+    "<div> "+ obj.founders + "<div>";
     // set style
     div.style.color = 'red';
     // better to use CSS though - just set class
@@ -30,7 +35,7 @@ function getData(url) {
     .then(
         data => {
         arrayOfData = data
-        console.log(arrayOfData[0])
+        data.forEach(obj => createAndAppendDivToBody(obj));
     })
 }
 
