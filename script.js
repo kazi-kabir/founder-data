@@ -1,5 +1,7 @@
 let arrayOfData = [];
+let listOfCountries = [];
 let url = 'http://localhost:3000/companyData';
+
 
 let mockObj = {
         company: "ByteDance",
@@ -25,6 +27,10 @@ function createAndAppendDivToBody(obj) {
     document.body.appendChild(div);
 }
 
+function countryCount(array) {
+    
+}
+
 function getData(url) {
     fetch(
         url, {
@@ -36,9 +42,14 @@ function getData(url) {
     .then(
         data => {
         arrayOfData = data
-        data.forEach(obj => createAndAppendDivToBody(obj));
+        data.forEach(obj => {
+            createAndAppendDivToBody(obj);
+            listOfCountries.push(obj.country);
+        });
     })
 }
+
+console.log(listOfCountries)
 
 getData(url);
 
