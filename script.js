@@ -4,16 +4,15 @@ let url = 'http://localhost:3000/companyData';
 let mockObj = {
         company: "ByteDance",
         valuation: 140,
-        industry: "internet",
+        industry: "fembu",
         country: " China",
         founders: "Zhang Yiming Liang Rubo"
 }
 
-
 function createAndAppendDivToBody(obj) {
     console.log(obj);
     var div = document.createElement('div');
-    div.innerHTML = "my <b>new</b> skill - <large>DOM maniuplation!</large>";
+    div.innerHTML = "my <b>" + this.obj.company + "</b> skill - <large>DOM maniuplation!</large>";
     // set style
     div.style.color = 'red';
     // better to use CSS though - just set class
@@ -33,10 +32,10 @@ function getData(url) {
         data => {
         arrayOfData = data
         console.log(arrayOfData[0])
-        createAndAppendDivToBody()
     })
 }
 
+createAndAppendDivToBody(mockObj)
 getData(url);
 
 // store JSON data somewhere 
@@ -45,4 +44,3 @@ getData(url);
 // make it appear as a div (for one)
 // flag library
 // https://github.com/luciopaiva/country-flags
-
