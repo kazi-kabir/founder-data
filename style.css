@@ -10,6 +10,10 @@ body {
     font-size: 5px;
 }
 
+#company {
+    color: white;
+}
+
 h1 {
     position: relative;
     font-family: "Raleway", sans-serif;

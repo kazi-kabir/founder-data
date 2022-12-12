@@ -12,11 +12,12 @@ let mockObj = {
 function createAndAppendDivToBody(obj) {
     var div = document.createElement('div');
     div.innerHTML = 
-    "<div>" + obj.company + "</div>" +
-    "<div> "+ obj.valuation + "<div>" + 
-    "<div> "+ obj.industry + "<div>" + 
-    "<div> "+ obj.country + "<div>" + 
-    "<div> "+ obj.founders + "<div>";
+    "<div id='company'> Company: " + obj.company + "</div>" +
+    "<div> Valuation: " + obj.valuation + "<div>" + 
+    "<div> Industry: " + obj.industry + "<div>" + 
+    "<div> Country: " + obj.country + "<div>" + 
+    "<div> Founders: " + obj.founders + "<div>" + 
+    "<div>"+"----"+"</div>";
     // set style
     div.style.color = 'red';
     // better to use CSS though - just set class
@@ -39,7 +40,6 @@ function getData(url) {
     })
 }
 
-createAndAppendDivToBody(mockObj)
 getData(url);
 
 // store JSON data somewhere 
