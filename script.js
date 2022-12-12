@@ -11,8 +11,9 @@ let mockObj = {
 
 function createAndAppendDivToBody(obj) {
     console.log(obj);
+    let newObj = {...obj}
     var div = document.createElement('div');
-    div.innerHTML = "my <b>" + this.obj.company + "</b> skill - <large>DOM maniuplation!</large>";
+    div.innerHTML = "my <b>" + newObj.company + "</b> skill - <large>DOM maniuplation!</large>";
     // set style
     div.style.color = 'red';
     // better to use CSS though - just set class
