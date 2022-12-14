@@ -19,16 +19,14 @@ function createAndAppendDivToBody(obj) {
     "<div> Industry: " + obj.industry + "<div>" + 
     "<div> Country: " + obj.country + "<div>" + 
     "<div> Founders: " + obj.founders + "<div>" + 
-    "<div>"+"----"+"</div>";
-    // set style
+    "<div>"+"\n"+"</div>";
     div.style.color = 'red';
-    // better to use CSS though - just set class
-    div.setAttribute('class', 'myclass'); // and make sure myclass has some styles in css
+    div.setAttribute('class', 'myclass'); 
     document.body.appendChild(div);
 }
 
 function countryCount(array) {
-    
+
 }
 
 function getData(url) {
