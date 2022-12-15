@@ -17,7 +17,7 @@ function createAndAppendDivToBody(obj) {
     "<div id='company'> Company: " + obj.company + "</div>" +
     "<div> Valuation: " + obj.valuation + "<div>" + 
     "<div> Industry: " + capitaliseFirstLetter(obj.industry) + "<div>" + 
-    "<div> Country: " + obj.country + "<div>" + 
+    "<div> Country: " + obj.country.replace(/\s/g,'') + "<div>" + 
     "<div> Founders: " + obj.founders + "<div>" + 
     "<div>"+"\n"+"</div>";
     div.setAttribute('class', 'myclass'); 
