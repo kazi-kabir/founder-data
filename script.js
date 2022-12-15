@@ -16,7 +16,7 @@ function createAndAppendDivToBody(obj) {
     div.innerHTML = 
     "<div id='company'> Company: " + obj.company + "</div>" +
     "<div> Valuation: " + obj.valuation + "<div>" + 
-    "<div> Industry: " + obj.industry + "<div>" + 
+    "<div> Industry: " + capitaliseFirstLetter(obj.industry) + "<div>" + 
     "<div> Country: " + obj.country + "<div>" + 
     "<div> Founders: " + obj.founders + "<div>" + 
     "<div>"+"\n"+"</div>";
@@ -24,6 +24,9 @@ function createAndAppendDivToBody(obj) {
     document.body.appendChild(div);
 }
 
+function capitaliseFirstLetter(string) {
+    return string[0].toUpperCase() + string.slice(1);
+}
 
 function getData(url) {
     fetch(
