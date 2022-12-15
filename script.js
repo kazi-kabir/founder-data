@@ -15,7 +15,7 @@ function createAndAppendDivToBody(obj) {
     var div = document.createElement('div');
     div.innerHTML = 
     "<div id='company'> Company: " + obj.company + "</div>" +
-    "<div> Valuation: " + obj.valuation + "<div>" + 
+    "<div> Valuation: $" + obj.valuation  + "bn" + "<div>" + 
     "<div> Industry: " + capitaliseFirstLetter(obj.industry) + "<div>" + 
     "<div> Country: " + obj.country.replace(/\s/g,'') + "<div>" + 
     "<div> Founders: " + obj.founders + "<div>" + 

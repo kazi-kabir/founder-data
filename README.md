@@ -6,6 +6,8 @@ FEATURES
 - sort by nation
 - add flags
 - styling
+  - more flair, cleaner, readability
+- fix orientation of info boxes
 
 TODO
 - [ ] setup fake JSON DB
