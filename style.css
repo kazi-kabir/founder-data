@@ -1,11 +1,11 @@
 body {
-    background-color: black;
+    background-color: white;
 }
 
 .header {
     padding: 10px;
     text-align: center;
-    background: black;
+    background: white;
     color: white;
     font-size: 5px;
 }
@@ -15,8 +15,8 @@ div[class="myclass"] {
     display: inline-block;
     height: 140px;
     width: 200px;
-    background-color: #D6ED17FF;
-    color: #606060FF;
+    background-color: #ff7f0b;
+    color: white;
     padding: 10px;
     margin: 50px;
     vertical-align: text-top;
@@ -29,5 +29,5 @@ h1 {
     font-family: "Raleway", sans-serif;
     font-weight: 100;
     font-size: 30px;
-    color: #D6ED17FF;
+    color: #ff7f0b;
 }
