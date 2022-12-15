@@ -20,14 +20,10 @@ function createAndAppendDivToBody(obj) {
     "<div> Country: " + obj.country + "<div>" + 
     "<div> Founders: " + obj.founders + "<div>" + 
     "<div>"+"\n"+"</div>";
-    div.style.color = 'red';
     div.setAttribute('class', 'myclass'); 
     document.body.appendChild(div);
 }
 
-function countryCount(array) {
-
-}
 
 function getData(url) {
     fetch(

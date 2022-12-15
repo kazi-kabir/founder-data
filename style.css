@@ -1,27 +1,27 @@
 body {
-    background-color: lightblue;
+    background-color: black;
 }
 
 .header {
     padding: 10px;
     text-align: center;
-    background: #1abc9c;
+    background: black;
     color: white;
     font-size: 5px;
 }
 
-#company {
-    color: white;
-}
 
 div[class="myclass"] {
     display: inline-block;
-    height: 200px;
+    height: 140px;
     width: 200px;
-    background-color: black;
-    color: #fff;
+    background-color: #D6ED17FF;
+    color: #606060FF;
     padding: 10px;
-    margin: 10px;
+    margin: 50px;
+    vertical-align: text-top;
+    border-radius: 10px;
+    font-family: "Raleway", sans-serif;
 }
 
 h1 {
@@ -29,5 +29,5 @@ h1 {
     font-family: "Raleway", sans-serif;
     font-weight: 100;
     font-size: 30px;
-    color: #080808;
+    color: #D6ED17FF;
 }
